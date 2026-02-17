@@ -24,12 +24,24 @@ st.set_page_config(
 # =========================
 # PATHS
 # =========================
-DATA_PATH = r"D:\BIA Project Folder\Fraud_Analysis_Dataset.csv"
-RF_MODEL_PATH = r"D:\BIA Project Folder\fraud_rf_model.joblib"
-GB_MODEL_PATH = r"D:\BIA Project Folder\fraud_gb_model.joblib"
-SCALER_PATH = r"D:\BIA Project Folder\scaler.joblib"
-TYPE_ENCODER_PATH = r"D:\BIA Project Folder\type_encoder.joblib"
-TEST_DATA_PATH = r"D:\BIA Project Folder\model_test_data.csv"
+
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+DATA_PATH = os.path.join(BASE_DIR, "..", "data", "Fraud_Analysis_Dataset.csv")
+RF_MODEL_PATH = os.path.join(BASE_DIR, "..", "models", "fraud_rf_model.joblib")
+GB_MODEL_PATH = os.path.join(BASE_DIR, "..", "models", "fraud_gb_model.joblib")
+SCALER_PATH = os.path.join(BASE_DIR, "..", "models", "scaler.joblib")
+TYPE_ENCODER_PATH = os.path.join(BASE_DIR, "..", "models", "type_encoder.joblib")
+TEST_DATA_PATH = os.path.join(BASE_DIR, "..", "data", "model_test_data.csv")
+
+#DATA_PATH = r"D:\Fraud-Detection-Intelligence-System\data\Fraud_Analysis_Dataset.csv"
+#RF_MODEL_PATH = r"D:/Fraud-Detection-Intelligence-System/models/fraud_rf_model.joblib"
+#GB_MODEL_PATH = r"D:\Fraud-Detection-Intelligence-System\models\fraud_gb_model.joblib"
+#SCALER_PATH = r"D:\Fraud-Detection-Intelligence-System\models\scaler.joblib"
+#TYPE_ENCODER_PATH = r"D:\Fraud-Detection-Intelligence-System\models\type_encoder.joblib"
+#TEST_DATA_PATH = r"D:\Fraud-Detection-Intelligence-System\data\model_test_data.xlsx"
 
 # =========================
 # LOAD DATA & MODELS
