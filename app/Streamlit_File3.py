@@ -67,6 +67,14 @@ rf_model, gb_model, scaler, type_encoder = load_models()
 
 fraud_col = "isfraud"
 
+possible_labels = ["isfraud", "is_fraud", "fraud", "class", "target"]
+fraud_col = next((c for c in df.columns if c.lower() in possible_labels), None)
+
+if fraud_col is None:
+    st.error("Fraud label column not found in dataset.")
+    st.stop()
+
+
 # =========================
 # HEADER
 # =========================
