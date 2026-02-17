@@ -34,7 +34,7 @@ RF_MODEL_PATH = os.path.join(BASE_DIR, "..", "models", "fraud_rf_model.joblib")
 GB_MODEL_PATH = os.path.join(BASE_DIR, "..", "models", "fraud_gb_model.joblib")
 SCALER_PATH = os.path.join(BASE_DIR, "..", "models", "scaler.joblib")
 TYPE_ENCODER_PATH = os.path.join(BASE_DIR, "..", "models", "type_encoder.joblib")
-TEST_DATA_PATH = os.path.join(BASE_DIR, "..", "data", "model_test_data.csv")
+TEST_DATA_PATH = os.path.join(BASE_DIR, "..", "data", "model_test_data.xlsx")
 
 
 #DATA_PATH = r"D:\Fraud-Detection-Intelligence-System\data\Fraud_Analysis_Dataset.csv"
@@ -49,7 +49,7 @@ TEST_DATA_PATH = os.path.join(BASE_DIR, "..", "data", "model_test_data.csv")
 # =========================
 @st.cache_data
 def load_data():
-    df = pd.read_csv(DATA_PATH)
+    df = pd.read_excel(TEST_DATA_PATH)
     df.columns = df.columns.str.lower().str.strip()
     return df
 
