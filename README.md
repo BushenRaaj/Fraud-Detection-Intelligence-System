@@ -182,7 +182,6 @@ Fraud-Detection-Intelligence-System/
 
 **Bushen Raaj Y**  
 Data Science & Artificial Intelligence  
-Boston Institute of Analytics  
 
 ---
 
