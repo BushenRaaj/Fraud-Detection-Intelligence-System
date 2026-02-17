@@ -1,6 +1,9 @@
 # 💳 Fraud Detection Intelligence System  
 ### End-to-End Machine Learning Solution for Real-Time Mobile Transaction Fraud Detection
 
+## 🌐 Live Demo
+👉 https://fraud-detection-intelligence-system-dbcs6mt83ydwsaamhdavbt.streamlit.app/
+
 ---
 
 ## 📌 Project Summary
