@@ -36,6 +36,7 @@ SCALER_PATH = os.path.join(BASE_DIR, "..", "models", "scaler.joblib")
 TYPE_ENCODER_PATH = os.path.join(BASE_DIR, "..", "models", "type_encoder.joblib")
 TEST_DATA_PATH = os.path.join(BASE_DIR, "..", "data", "model_test_data.csv")
 
+
 #DATA_PATH = r"D:\Fraud-Detection-Intelligence-System\data\Fraud_Analysis_Dataset.csv"
 #RF_MODEL_PATH = r"D:/Fraud-Detection-Intelligence-System/models/fraud_rf_model.joblib"
 #GB_MODEL_PATH = r"D:\Fraud-Detection-Intelligence-System\models\fraud_gb_model.joblib"
